@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-BLL", "2-BLL", "{8FB75A1E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-DAL", "3-DAL", "{80112622-7D71-4C59-99B7-BDA8D4668546}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Modelos", "4-Modelos", "{A9C828A4-1ED0-4E80-89A6-CFEFB0E4DD23}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-DTO", "4-DTO", "{A9C828A4-1ED0-4E80-89A6-CFEFB0E4DD23}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bllLivrariaEspirita", "bllLivrariaEspirita\bllLivrariaEspirita.csproj", "{B69640DC-FF24-4A5A-9AE9-459B4728AF73}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dalLivrariaEspirita", "dalLivrariaEspirita\dalLivrariaEspirita.csproj", "{3216136A-C73B-4348-B8F2-91C9242ECDCC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "modelosLivrariaEspirita", "daoLivrariaEspirita\modelosLivrariaEspirita.csproj", "{C4CA5C60-98B7-4B09-B103-352FFE016456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dtoLivrariaEspirita", "daoLivrariaEspirita\dtoLivrariaEspirita.csproj", "{C4CA5C60-98B7-4B09-B103-352FFE016456}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
