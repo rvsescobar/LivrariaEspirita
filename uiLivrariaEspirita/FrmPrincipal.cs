@@ -8,22 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace uiLivrariaEspirita
+namespace uiLivrariaEspirita;
+
+/// <summary>
+/// 
+/// </summary>
+public partial class FrmPrincipal : Form
 {
     /// <summary>
     /// 
     /// </summary>
-    public partial class FrmPrincipal : Form
+    public FrmPrincipal()
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        public FrmPrincipal()
-        {
-            InitializeComponent();
+        InitializeComponent();
 
-            FrmSplash frmSplash = new FrmSplash();
-            frmSplash.ShowDialog();
-        }
+        FrmSplash frmSplash = new FrmSplash();
+        frmSplash.ShowDialog();
     }
 }

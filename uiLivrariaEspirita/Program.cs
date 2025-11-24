@@ -1,21 +1,20 @@
-namespace uiLivrariaEspirita
+namespace uiLivrariaEspirita;
+
+/// <summary>
+/// Entry class for the application.
+/// </summary>
+internal static class Program
 {
     /// <summary>
-    /// Entry class for the application.
+    /// The main entry point for the application.
     /// </summary>
-    internal static class Program
+    [STAThread]
+    static void Main()
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPrincipal());
-        }
+        // To customize application configuration such as set high DPI settings or default font,
+        // see https://aka.ms/applicationconfiguration.
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new FrmPrincipal());
     }
 }

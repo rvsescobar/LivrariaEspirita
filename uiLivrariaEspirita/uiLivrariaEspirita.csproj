@@ -6,10 +6,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Imagens\iconelivro.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Imagens\" />
+    <Content Include="Imagens\iconelivro.ico" />
   </ItemGroup>
 
   <ItemGroup>
