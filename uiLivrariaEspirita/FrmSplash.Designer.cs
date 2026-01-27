@@ -29,53 +29,56 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            pictureBoxSplash = new PictureBox();
-            progressBar = new ProgressBar();
-            timerSplash = new System.Windows.Forms.Timer(components);
-            ((System.ComponentModel.ISupportInitialize)pictureBoxSplash).BeginInit();
+            PictureBoxSplash = new PictureBox();
+            ProgressBar = new ProgressBar();
+            TimerSplash = new System.Windows.Forms.Timer(components);
+            ((System.ComponentModel.ISupportInitialize)PictureBoxSplash).BeginInit();
             SuspendLayout();
             // 
-            // pictureBoxSplash
+            // PictureBoxSplash
             // 
-            pictureBoxSplash.Image = Properties.Resources.ImgSplash;
-            pictureBoxSplash.Location = new Point(0, 0);
-            pictureBoxSplash.Name = "pictureBoxSplash";
-            pictureBoxSplash.Size = new Size(320, 411);
-            pictureBoxSplash.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxSplash.TabIndex = 0;
-            pictureBoxSplash.TabStop = false;
+            PictureBoxSplash.Image = Properties.Resources.ImgSplash;
+            PictureBoxSplash.Location = new Point(0, 0);
+            PictureBoxSplash.Margin = new Padding(3, 4, 3, 4);
+            PictureBoxSplash.Name = "PictureBoxSplash";
+            PictureBoxSplash.Size = new Size(366, 548);
+            PictureBoxSplash.SizeMode = PictureBoxSizeMode.StretchImage;
+            PictureBoxSplash.TabIndex = 0;
+            PictureBoxSplash.TabStop = false;
             // 
-            // progressBar
+            // ProgressBar
             // 
-            progressBar.Location = new Point(0, 417);
-            progressBar.Name = "progressBar";
-            progressBar.Size = new Size(320, 23);
-            progressBar.TabIndex = 1;
+            ProgressBar.Location = new Point(0, 556);
+            ProgressBar.Margin = new Padding(3, 4, 3, 4);
+            ProgressBar.Name = "ProgressBar";
+            ProgressBar.Size = new Size(366, 31);
+            ProgressBar.TabIndex = 1;
             // 
-            // timerSplash
+            // TimerSplash
             // 
-            timerSplash.Enabled = true;
-            timerSplash.Tick += timerSplash_Tick;
+            TimerSplash.Enabled = true;
+            TimerSplash.Tick += TimerSplash_Tick;
             // 
             // FrmSplash
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(320, 441);
-            Controls.Add(progressBar);
-            Controls.Add(pictureBoxSplash);
+            ClientSize = new Size(366, 588);
+            Controls.Add(ProgressBar);
+            Controls.Add(PictureBoxSplash);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmSplash";
             StartPosition = FormStartPosition.CenterScreen;
             Load += FrmSplash_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBoxSplash).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PictureBoxSplash).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBoxSplash;
-        private ProgressBar progressBar;
-        private System.Windows.Forms.Timer timerSplash;
+        private PictureBox PictureBoxSplash;
+        private ProgressBar ProgressBar;
+        private System.Windows.Forms.Timer TimerSplash;
     }
 }

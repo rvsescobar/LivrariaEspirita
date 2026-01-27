@@ -1,42 +1,43 @@
-namespace uiLivrariaEspirita;
-
-/// <summary>
-/// 
-/// </summary>
-public partial class FrmSplash : Form
+namespace uiLivrariaEspirita
 {
     /// <summary>
-    /// 
+    /// Classe FrmSplash.
     /// </summary>
-    public FrmSplash()
+    public partial class FrmSplash : Form
     {
-        InitializeComponent();
-    }
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    private void FrmSplash_Load(object sender, EventArgs e)
-    {
-        progressBar.Maximum = 100;
-        timerSplash.Enabled = true;
-    }
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    private void timerSplash_Tick(object sender, EventArgs e)
-    {
-        if (progressBar.Value < 100)
+        /// <summary>
+        /// Método de inicialização do formulário.
+        /// </summary>
+        public FrmSplash()
         {
-            progressBar.Value += 1;
+            InitializeComponent();
         }
-        else
+        /// <summary>
+        /// Método que trata o evento Load do formulário FrmSplash.
+        /// </summary>
+        /// <param name="sender">Objeto que disparou o evento.</param>
+        /// <param name="e">Informações adicionais sobre o evento.</param>
+        private void FrmSplash_Load(object sender, EventArgs e)
         {
-            timerSplash.Enabled = false;
-            this.Close();
+            ProgressBar.Maximum = 100;
+            TimerSplash.Enabled = true;
+        }
+        /// <summary>
+        /// Método que trata o evento Tick do Timer.
+        /// </summary>
+        /// <param name="sender">Objeto que disparou o evento.</param>
+        /// <param name="e">Informações adicionais sobre o evento.</param>
+        private void TimerSplash_Tick(object sender, EventArgs e)
+        {
+            if (ProgressBar.Value < 100)
+            {
+                ProgressBar.Value += 1;
+            }
+            else
+            {
+                TimerSplash.Enabled = false;
+                this.Close();
+            }
         }
     }
 }
