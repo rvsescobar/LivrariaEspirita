@@ -30,7 +30,7 @@ Sistema desenvolvido para auxiliar na gestão de uma livraria com foco em public
 
 - `Backend`: .NET (C#)
 - `Frontend`: Aplicativo do Windows Forms
-- `Banco de Dados`: SQL Server Express LocalDB
+- `Banco de Dados`: SQLite
 
 ## 💡 Curiosidade
 
