@@ -4,7 +4,7 @@ namespace dalLivrariaEspirita
 {
     /// <summary>
     /// Repositório responsável por realizar operações de acesso a dados
-    /// relacionadas à entidade Editora.
+    /// relacionados à entidade Editora.
     /// Implementa operações básicas de CRUD utilizando conexão direta ao banco.
     /// </summary>
     public class EditoraRepository : IRepository<EditoraDto>
@@ -19,6 +19,8 @@ namespace dalLivrariaEspirita
         /// </returns>
         public EditoraDto GetById(int id)
         {
+            EditoraDto editora = new EditoraDto();
+            
             using var conn = DatabaseConnection.Instance.GetConnection();
             conn.Open();
 
@@ -29,13 +31,10 @@ namespace dalLivrariaEspirita
             using var reader = cmd.ExecuteReader();
             if (reader.Read())
             {
-                return new EditoraDto
-                {
-                    Id = reader.GetInt32(0),
-                    Nome = reader.GetString(1)
-                };
+                editora.Id = reader.GetInt32(0);
+                editora.Nome = reader.GetString(1);
             }
-            return null;
+            return editora;
         }
         /// <summary>
         /// Retorna a lista completa de editoras cadastradas.
