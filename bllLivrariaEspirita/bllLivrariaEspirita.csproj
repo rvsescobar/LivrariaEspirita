@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\dalLivrariaEspirita\dalLivrariaEspirita.csproj" />
+    <ProjectReference Include="..\dtoLivrariaEspirita\dtoLivrariaEspirita.csproj" />
+  </ItemGroup>
+
 </Project>
